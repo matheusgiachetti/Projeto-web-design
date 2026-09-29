@@ -1,0 +1,63 @@
+<!DOCTYPE html> <!-- Informa ao navegador que o documento usa HTML5 -->
+<html lang="pt-BR"> <!-- Idioma da página: ajuda leitores de tela e buscadores (SEO) -->
+ 
+<head> <!-- Cabeçalho: informações sobre a página, não aparecem no conteúdo -->
+    <meta charset="UTF-8"> <!-- Codificação que permite acentos e ç -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adapta a página à largura do celular (responsividade) -->
+ 
+    <!-- SEO: título único de até ~60 caracteres, exibido na aba e no Google -->
+    <title>Nome da Pizzaria | Pizzas artesanais em Sorocaba</title>
+ 
+    <!-- SEO: descrição de até ~155 caracteres, exibida abaixo do título no Google -->
+    <meta name="description" content="Pizzas artesanais com massa de fermentação natural. Veja o cardápio, monte sua pizza e faça seu pedido.">
+ 
+    <!-- Arquivo de estilos externo (forma recomendada na Aula 06) -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+ 
+<body> <!-- Corpo: tudo o que aparece na tela -->
+ 
+    <!-- Cabeçalho do site: logo e menu, repetido em todas as páginas -->
+    <header class="cabecalho">
+        <a href="index.html" class="logo">Nome da Pizzaria</a>
+ 
+        <!-- Menu principal; aria-label descreve o menu para leitores de tela -->
+        <nav aria-label="Menu principal">
+            <ul class="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="cardapio.html">Cardápio</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+ 
+    <!-- Conteúdo principal da página (só pode existir um <main> por página) -->
+    <main>
+ 
+        <!-- Seção de destaque: primeira coisa que o visitante vê -->
+        <section class="destaque">
+            <!-- SEO: apenas um <h1> por página, descrevendo o assunto principal -->
+            <h1>Pizza artesanal feita no forno a lenha</h1>
+            <p>Texto de apresentação da pizzaria.</p>
+            <a href="cardapio.html" class="botao">Ver cardápio</a>
+        </section>
+ 
+        <!-- Seção de exemplo: as próximas seções usam <h2> -->
+        <section class="secao">
+            <h2>Título da seção</h2>
+            <p>Conteúdo da seção.</p>
+        </section>
+ 
+    </main>
+ 
+    <!-- Rodapé: informações de contato e direitos, repetido em todas as páginas -->
+    <footer class="rodape">
+        <p>&copy; 2026 Nome da Pizzaria. Todos os direitos reservados.</p>
+    </footer>
+ 
+    <!-- JavaScript no final do body: carrega depois do HTML, deixando a página mais rápida -->
+    <script src="js/script.js"></script>
+</body>
+ 
+</html>

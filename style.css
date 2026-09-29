@@ -1,0 +1,30 @@
+/* ===== Reset básico ===== */
+/* Remove margens padrão do navegador e faz padding/borda contarem dentro da largura */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+/* ===== Variáveis de cor e fonte ===== */
+/* Definidas uma vez e reutilizadas no site todo; trocar aqui muda tudo */
+:root {
+    --cor-principal: #b22222;
+    --cor-texto: #222222;
+    --cor-fundo: #ffffff;
+    --fonte-padrao: Arial, sans-serif;
+}
+ 
+/* ===== Estilo geral da página ===== */
+body {
+    font-family: var(--fonte-padrao);
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
+    line-height: 1.6; /* Espaço entre linhas para facilitar a leitura */
+}
+ 
+/* Imagens nunca passam da largura do elemento pai (responsividade) */
+img {
+    max-width: 100%;
+    height: auto;
+}
